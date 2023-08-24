@@ -1,14 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { cache } = require('webpack')
-// const { Template } = require('webpack')
 
 const rulesForJavaScript = {
     test: /\.(js|jsx)$/,
     loader: 'babel-loader',
     options: {
 
-        // "presets" : ["@babel/preset-react"]
         "presets": [
             [
                 "@babel/preset-react",
@@ -65,7 +62,6 @@ module.exports = {
         rules
     },
     plugins: [new HtmlWebpackPlugin({
-        // template: 'src/index.html',
         template: 'public/index.html',
         title: 'portfolio',
     }
@@ -74,10 +70,6 @@ module.exports = {
         port: 3000,
         open: true,
     },
-
-    // cache: false,   //Porque al realizar cambios aveces webpack no lo detecta; Lo malo es que no renderiza lo necesario sino que al realizar algun cambio y guardar renderiza todo el sitio.
-                   //https://github.com/webpack/webpack-dev-server/issues/2802  
-                    //https://webpack.js.org/configuration/cache/
 
     devtool: "source-map",
 }

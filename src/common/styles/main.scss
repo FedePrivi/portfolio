@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'normalize';
+
+
+//COMPONENTS
+
+@import '../../app.scss';
+
+
+
+//PAGES
+
+@import '../../pages/Inicio/inicio.scss';
+@import '../../pages/description/description.scss';
+@import '../../pages/proyectos/projects.scss';
+@import '../../pages/skills/Skills.scss';
+@import '../../pages/footer/footer.scss';
+
+//COMPONENTS
+
+@import '../../common/components/ScrollAnimation/scrollAnimation.scss';
+@import '../../common/components/TitleAboutMe/TitleAboutMe.scss';
+@import '../components/myName/myName.scss';
+@import '../components/Technology/technology.scss';
+@import '../components/card/card.scss';
+@import '../components/navBar/navBar.scss';
+@import '../components/icon/icon.scss';
+@import '../components/IconsContainer/IconsContainer.scss';
+
+//BASIC STYLES
+
+body {
+    background-color: $background-page;
+}
+

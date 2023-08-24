@@ -1,0 +1,34 @@
+
+    
+    
+    
+    
+    .title-aboutMe {
+        // @include lineas-background-title (blue, transparent , 45deg, 200px, 100px, 0, $animation: true);
+        //no me deja reutilizar mixin  (se le coloca al titulo con mi nombre este mismo, como que se superponen y solo usa estos parametros de esta llamada al mixin)
+        //CREO YO: que es porque cuando webpack empaqueta los modulos en el mismo archivos JS las clases repetidas o como en este caso la llamada de un mixin con el mismo nombre llamado en otra ocacion, como detecta (no se quien) q son iguales "la superpone" y como en css normal carga el ultimo estilo q se coloco.
+
+        text-shadow: 3px 2px 4px $second-font-color;
+        font-size: 90px;
+        color: #CECFC9;
+
+        span {
+            display: block;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        .title-aboutMe {
+            font-size: 40px;
+            // display: inline-block;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+
+
+

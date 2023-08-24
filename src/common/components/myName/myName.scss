@@ -1,0 +1,46 @@
+.name {
+    position: relative;
+    font-weight: 900;
+    left: 5px;
+    top: 30px;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px black;
+    @include lineas-background-title($primary-color,
+                                     transparent,
+                                     145deg, 
+                                     650px,
+                                     50px,
+                                     180deg,
+                                     $animation: true);
+
+}
+
+.title {
+    display: flex;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: $second-font-color;
+    text-shadow: 5px 5px 5px black;
+
+}
+
+@media (max-width: 500px) {
+
+    
+    .name{
+        font-size: 40px;
+        left: 0;
+        @include lineas-background-title($primary-color,
+        transparent,
+        145deg, 
+        300px,
+        50px,
+        180deg,
+        $animation: true);  
+    }
+
+    .title{
+        font-size: 20px;
+    }
+}

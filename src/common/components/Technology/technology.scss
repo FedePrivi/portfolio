@@ -1,0 +1,122 @@
+.item {
+    // position: absolute;
+    animation: 3s  traslado;
+    color: $font-color;
+    // border: 2px solid red;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .name-container {
+        width: 50px; //para que todos esten con el mismo espacio respecto a la barra
+    }
+  
+    .level-container{
+
+        width: 490px;
+        height: 25px;
+        // border:2px solid white;
+       
+        
+        
+        .level{
+            width: 0px;
+            height: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-image: repeating-linear-gradient(55deg,
+            $second-font-color,
+            $second-font-color 3px,
+            transparent 3px,
+            transparent 6px);
+            // background-color: green;
+            // margin-left: 20px;
+
+        
+
+           
+
+        }
+    
+        .React {
+            animation: 3s animacionR forwards;
+
+            // animation: 5s animacion;
+
+            @keyframes animacionR {
+                0% {
+                    width: 0;
+                }
+
+                50%{
+                    width: 20%;
+                }
+
+                100% {
+                    width: 70%;
+                }
+            }
+        }
+
+            .CSS {
+            animation: 3s animacionC forwards ;
+
+            @keyframes animacionC {0% {width: 0;}50%{width: 70%;}75%{width: 10%;}100% {width: 100%;}
+            }
+        }
+
+    }
+
+            .Webpack {
+            animation: 3s animacionW forwards ;
+
+            @keyframes animacionW {0% {width: 0;}50%{width: 90%;}75%{width: 20%;}100% {width: 75%;}
+            }
+
+        }
+
+            .Html {
+            animation: 3s animacionH forwards ;
+
+            @keyframes animacionH {0% {width: 0;}50%{width: 75%;}75%{width: 50%;}100% {width: 90%;}
+            }
+    }
+
+
+            .Javascript {
+                animation: 3s animacionJ forwards ;
+
+                @keyframes animacionJ {0% {width: 0;}50%{width: 20%;}75%{width: 15%;}100% {width: 85%;}
+                }
+    }
+
+    .Sass {
+        animation: 3s animacionS forwards;
+
+        @keyframes animacionS {
+            0%{width: 0;}50%{width: 35%;}75%{width: 5%}100%{width: 45%;}
+        }
+    }
+
+    .Vite {
+        animation: 3s animacionV forwards;
+
+        @keyframes animacionV {
+            0%{width: 0;}50%{width: 80%;}75%{width: 15%}100%{width: 20%;}
+        }
+    }
+
+    
+}
+        
+  
+@media (max-width: 500px) {
+        .item {
+            flex-basis: 200px; 
+        }
+
+        .level-container {
+            display: none;
+        }
+}

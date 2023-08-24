@@ -1,0 +1,51 @@
+.footer {
+    display: inline-block;
+    height: 30vh;
+    position: relative;
+}
+
+.division {
+    margin-left: 100px;
+    margin-right: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.651)
+}
+
+.container-colores {
+    margin-top: 50px;
+}
+
+.colores {
+    display: flex;
+    box-shadow: 0px 5px 5px #080b0ec0;
+    width: 210px;
+    margin: 0 auto;
+}
+
+.item-color {
+    width: 70px;
+    height: 20px;
+}
+
+.fondo {
+    background-color: $background-page;
+}
+
+.primario {
+    background-color: $primary-color;
+}
+
+.secundario {
+    background-color: $second-font-color;
+}
+.final{
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h4 {
+    // margin: 20px auto;
+    // text-align: center;
+    word-spacing: 7px;
+    font-weight:lighter;
+}

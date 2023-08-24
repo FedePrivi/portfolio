@@ -1,0 +1,95 @@
+@mixin lineas-background-title ($primary-color, $secondary-color, $deg, $sizeW, $sizeH, $box-rotate, $animation){
+    
+    &:before {
+        content: "";
+        rotate: $box-rotate;
+        height: $sizeH; //50px
+        width: $sizeW; //$sizeW; //650px
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        z-index: -1;
+        background-image: repeating-linear-gradient($deg,
+            $primary-color,
+            $primary-color 5px,
+            $secondary-color 5px,
+            $secondary-color 10px);
+
+        @if $animation  {
+
+            animation: animationTitle 3s forwards;    
+            
+        }
+
+        @keyframes animationTitle {
+
+            0% {
+                width: 0px;
+            }
+
+            100% {
+                width: $sizeW;
+            }
+        }    
+    }
+
+}
+
+
+////////////////////////////////
+        
+@mixin lineas ($direction, $firstColor, $secondColor) {
+    background-image: repeating-linear-gradient(
+        $direction, /*145deg*/
+        $firstColor, 
+        $firstColor 1.5px,
+         $secondColor 1.5px,
+         $secondColor 3px         
+    );    
+}
+
+//////////////////////////////
+
+
+
+@mixin animation-background-lines ($sizeW, $sizeH, $deg, $primary-color, $secondary-color, $box-rotate, $Ptop, $Pleft) {
+
+    
+
+    &:before {
+        content: "";
+        rotate: $box-rotate;
+        height: $sizeH; //50px
+        width: $sizeW; //$sizeW; //650px
+        position: absolute;
+        top: $Ptop;
+        left: $Pleft;
+        z-index: -1;
+        background-image: repeating-linear-gradient($deg,
+            $primary-color,
+            $primary-color 5px,
+            $secondary-color 5px,
+            $secondary-color 10px);
+        // animation: mouvement 3s forwards;
+
+        @keyframes mouvement {
+            
+            0% {
+
+                bottom: 0;
+
+            }
+            100% {
+                top: 0%;
+            }
+
+
+        }
+
+    }
+
+    
+    
+}
+
+

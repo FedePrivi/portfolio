@@ -1,0 +1,18 @@
+.container-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+//Para usar en responsive en el componente Inicio.jsx
+@media (max-width: 500px) {
+
+    .container-icons {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,70 @@
+.scroll {
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(90deg);
+    right: 10%;
+    top: 70%;
+    font-family: "Inconsolata-Black";
+    // box-shadow: ;
+    // background-color: red;
+    
+
+
+
+    .animation {
+        
+        position: absolute;
+        width: 0px;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 0 0px 2px 0 white;
+        animation: desplazarse 5s;
+        animation-delay: 2.5s;
+        @include lineas (145deg, $color-scroll-animation, #69696933);
+        
+        
+        p {
+            color: $background-page;
+            font-size: 40px;
+            font-weight: 900;
+            padding-top: 16px;
+            padding-left: 12px;
+        }
+
+
+        
+            @keyframes desplazarse {
+                0% {
+                    width: 0%;
+                }
+
+                25%{
+                    left: 0;
+                }
+
+                50%{
+                    width: 200px;  
+                }        
+
+                100% {
+                    right: 0;
+                    width: 0%;
+                    display: none;
+                }
+
+            }
+        
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .scroll {
+        display: none;
+}
+}
+
+

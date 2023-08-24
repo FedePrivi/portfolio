@@ -1,0 +1,52 @@
+.header {
+    // background-color: green;
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main {
+    // background-color: blue;
+    grid-area: main;
+
+}
+
+
+
+.footer {
+    // background-color: grey;
+    grid-area: footer;
+    
+}
+
+// body::-webkit-scrollbar {
+//     display: none;
+// }
+
+.app-container {
+    font-family: "Coda-Regular", sans-serif;
+    color: $font-color;
+    position: relative;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto;
+    grid-template-columns: 120px 1fr;
+    grid-template-areas: 
+    "navbar header header header"
+    "navbar main main main"
+    "navbar main main main"
+    "navbar footer footer footer"
+    ;
+}
+
+@media (max-width: 500px) {
+    .app-container {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

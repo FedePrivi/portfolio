@@ -39,7 +39,7 @@ const rulesSvg = {
 }
 
 const rulesImages = {
-    test: /\.(pdf|png|jpe?g|gif|ico|ttf)$/i,
+    test: /\.(pdf|png|jpe?g|gif|ico|ttf|woff2)$/i,
     use: [
           {
             loader: "file-loader",
@@ -56,12 +56,14 @@ module.exports = {
     // entry: './src/index.js'
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'build')
+        path: path.resolve(__dirname, 'build'),
+        clean: true,
     },
     module: {
         rules
     },
-    plugins: [new HtmlWebpackPlugin({
+    plugins: [new HtmlWebpackPlugin(
+        {
         template: 'public/index.html',
         title: 'portfolio',
     }

@@ -35,8 +35,9 @@
   
     header{
         width: 100%;
-        margin-top: 15px;
-
+        height: 50px;
+        padding-top: 20px;
+        
         h3 {
             font-size: 30px;
             text-align: center;
@@ -131,10 +132,3 @@
 
 }
 
-// .icon {
-//     svg {
-//         // filter:  invert(45%) sepia(99%) saturate(310%) hue-rotate(21deg) brightness(90%) contrast(84%);
-//         filter: invert(100%) sepia(2%) saturate(4207%) hue-rotate(193deg) brightness(125%) contrast(87%);
-//     }
- 
-// }

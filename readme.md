@@ -1,1 +1,1 @@
-Agregar pluging mini css extract pluggin para separar los estilos del bundle.js, mirarlo en el curso de midu q esta en la pestaña de react o de webpack en one note o el ultimo articulo de la pagina de webpack en one note 
+Agregar plugin mini css extract pluggin para separar los estilos del bundle.js, mirarlo en el curso de midu q esta en la pestaña de react o de webpack en one note o el ultimo articulo de la pagina de webpack en one note 

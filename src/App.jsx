@@ -12,8 +12,8 @@ import { useRef, useEffect, useState } from "react";
 import "./common/styles/main.scss"
 
 
-
  const App = () => {
+
 
   const [seccionActual, setSeccionActual] = useState("")
 

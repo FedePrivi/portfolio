@@ -9,7 +9,7 @@ const IconsContainer = () => {
      const icons = [
         {ICON: ICON_GITHUB, LINK: "https://github.com/FedePrivi"},
         {ICON: ICON_LINKEDIN, LINK: "https://www.linkedin.com/in/federico-privitera/"},
-        {ICON: ICON_MAIL, LINK: "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMlQpNjhfsBBVrpSZlgRvdKWrkjrwPlZdBCwPQzSkjVBhdVjbZGJFKpTBFXlcTzMzVjWfbB"},
+        {ICON: ICON_MAIL, LINK: "mailto:fedeprivi2001@gmail.com"},
     ]
 
     return (

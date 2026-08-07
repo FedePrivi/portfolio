@@ -20,7 +20,6 @@ console.log()
                     <div className="container-social-icons-responsive">
 
                         <IconsContainer/>
-
                     </div>
 
                 </div>

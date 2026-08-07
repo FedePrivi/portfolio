@@ -24,11 +24,17 @@
 }
 
 .cards-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 350px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: 350px;
+        // gap: 40px;
+        // margin: 30px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 40px;
-        margin: 30px auto;
+        margin: 30px auto;  
     }
 
     

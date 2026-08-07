@@ -1,6 +1,6 @@
 import MyName from "../../common/components/myName/Myname.jsx"
 import ScrollAnimation from "../../common/components/ScrollAnimation/ScrollAnimation.jsx"
-import curriculum from "../../assets/pdfs/CVFedericoPrivitera.pdf"
+import curriculum from "../../assets/pdfs/CV_FedericoPrivitera.pdf"
 import { IconsContainer } from "../../common/components/IconsContainer/IconsContainer.jsx"
 import {useState} from 'react'
 

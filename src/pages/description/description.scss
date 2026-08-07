@@ -1,3 +1,6 @@
+@use '../../common/styles/variables' as *;
+@use '../../common/styles/mixins' as *;
+
 .article {
     position: relative;
     display: flex;

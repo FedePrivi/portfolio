@@ -1,37 +1,25 @@
-@import 'variables';
-@import 'fonts';
-@import 'mixins';
-@import 'normalize';
+@use 'variables' as *;
+@use 'fonts';
+@use 'mixins' as *;
+@use 'normalize';
 
+@use '../../app';
 
-//COMPONENTS
+@use '../../pages/Inicio/inicio';
+@use '../../pages/description/description';
+@use '../../pages/proyectos/projects';
+@use '../../pages/skills/skills';
+@use '../../pages/footer/footer';
 
-@import '../../app.scss';
-
-
-
-//PAGES
-
-@import '../../pages/Inicio/inicio.scss';
-@import '../../pages/description/description.scss';
-@import '../../pages/proyectos/projects.scss';
-@import '../../pages/skills/Skills.scss';
-@import '../../pages/footer/footer.scss';
-
-//COMPONENTS
-
-@import '../../common/components/ScrollAnimation/scrollAnimation.scss';
-@import '../../common/components/TitleAboutMe/TitleAboutMe.scss';
-@import '../components/myName/myName.scss';
-@import '../components/Technology/technology.scss';
-@import '../components/card/card.scss';
-@import '../components/navBar/navBar.scss';
-@import '../components/icon/icon.scss';
-@import '../components/IconsContainer/IconsContainer.scss';
-
-//BASIC STYLES
+@use '../../common/components/ScrollAnimation/scrollAnimation';
+@use '../../common/components/TitleAboutMe/TitleAboutMe';
+@use '../components/myName/myName';
+@use '../components/Technology/technology';
+@use '../components/card/card';
+@use '../components/navBar/navBar';
+@use '../components/icon/icon';
+@use '../components/IconsContainer/IconsContainer';
 
 body {
     background-color: $background-page;
 }
-

@@ -1,3 +1,5 @@
-export {default as RickandMortyIMG} from './appRickandMorty.png'
-export {default as CitasVeterinariaIMG} from './appCitasVeterinaria.png'
-export {default as GastoSemanalIMG} from './appGastoSemanal.png'
+import RickandMortyIMG from './appRickandMorty.png'
+import CitasVeterinariaIMG from './appCitasVeterinaria.png'
+import GastoSemanalIMG from './appGastoSemanal.png'
+
+export { RickandMortyIMG, CitasVeterinariaIMG, GastoSemanalIMG }
